@@ -127,3 +127,28 @@ nav ul li { font-weight: var(--bold-font); }
   line-height: var(--line-height);
   padding: 0.4rem;
 }
+
+/* Section "Skills" */
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header { margin-bottom: 1rem; }
+
+.skills-wrapper img { padding: 1.25rem; }
+
+.icon {
+  width: 10.75rem;
+  height: 10rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
