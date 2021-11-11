@@ -17,9 +17,7 @@
   --transition: 0.3s;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 /* CSS Resets */
 * {
@@ -29,9 +27,7 @@ html {
   /* border: 2px solid red; */
 }
 
-ul {
-  list-style-type: none;
-}
+ul { list-style-type: none; }
 
 a {
   text-decoration: none;
@@ -43,6 +39,46 @@ a:hover {
   color: var(--secondary-color);
 }
 
-body {
-  font-family: var(--font-family);
+body { font-family: var(--font-family); }
+
+/* Sticky (always on top) Navbar */
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 { color: var(--primary-color); }
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li { font-weight: var(--bold-font); }
+
+.burger-menu {
+  display: none;
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
