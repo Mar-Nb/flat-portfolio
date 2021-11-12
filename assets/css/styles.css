@@ -255,3 +255,26 @@ nav ul li { font-weight: var(--bold-font); }
   color: #fff;
   cursor: pointer;
 }
+
+/* Social icon */
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+footer hr { margin-bottom: 1rem; }
