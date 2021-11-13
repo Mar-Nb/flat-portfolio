@@ -99,7 +99,7 @@ nav h1 { color: var(--secondary-color); }
 }
 
 .hero img {
-  height: 37.5rem;
+  height: auto;
   width: 37.5rem;
 }
 
@@ -320,14 +320,17 @@ footer {
     background-color: var(--bg-color);
     flex-direction: column;
     top: 86px;
-    left: 10%;
+    right: 0%;
     width: 80%;
     text-align: center;
+    justify-content: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
   }
-
+  
   nav ul li { margin: 8px; }
+  
+  nav ul li:not(nav ul li:last-child) { border-bottom: 1px solid var(--secondary-color); }
 
   .burger-menu { display: block; }
 
@@ -342,6 +345,7 @@ footer {
   .hero img {
     height: 37.5rem;
     width: 30rem;
+    margin-bottom: 7rem;
   }
 
   .bio {
@@ -373,11 +377,11 @@ footer {
 /* Responsivité mobiles (420px et moins) */
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
+    height: auto;
     width: 23rem;
   }
 
-  .hero { margin-top: -9.5rem; }
+  .hero { margin-top: 2rem; }
 
   .bio { width: 18.3rem; }
 
@@ -389,7 +393,7 @@ footer {
 /* Responsivité petits mobiles (320px et moins) */
 @media screen and (max-width: 320px) {
   .hero img {
-    height: 37.5rem;
+    height: auto;
     width: 20rem;
   }
 
